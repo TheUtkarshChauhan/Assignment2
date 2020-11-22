@@ -1,0 +1,17 @@
+/*A C program to print multiplication table of any number.
+Author : Utkarsh Chuahan */
+#include <stdio.h>
+ 
+int main()
+{
+    int n,i,j;
+    printf("Enter any number for computing Multiplication table:");
+    scanf("%d",&n);
+    printf("\nEnter the number of terms you want in table:");
+    scanf("%d",&j);
+    for(i=1;i<=j;i++)
+    {
+        printf("%d * %d = %d\n",n,i,n*i);
+    }
+    return 0;
+}

@@ -1,0 +1,16 @@
+/*A C program to find first and last digit of a number.
+Author : Utkarsh Chuahan */
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+     int n,ld,fd,d;
+     printf("Enter any Number:");
+     scanf("%d",&n);
+     ld=n%10;//to find last digit
+     d=log10(n);
+     fd=n/pow(10,d);//to find last digit
+     printf("First Digit Of Given No:%d\n",fd);
+     printf("Last Digit Of Given No:%d",ld);
+    return 0;
+}

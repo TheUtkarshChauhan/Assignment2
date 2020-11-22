@@ -1,0 +1,26 @@
+/* A C Program to find frequency of each digit in each integer
+Author : Utkarsh Chuahan */
+#include <stdio.h>
+int main()
+{   long long num, n;
+    int i, lastDigit;
+    int f[10];
+    printf("Enter any number: ");
+    scanf("%lld", &num);
+    for(i=0; i<10; i++)
+    {
+        f[i] = 0;
+    }
+    n = num; 
+    while(n != 0)
+    {   lastDigit = n % 10;
+        n /= 10;
+        f[lastDigit]++;
+    }
+    printf("Frequency of each digit in %lld is: \n", num);
+    for(i=0; i<10; i++)
+    {
+        printf("Frequency of %d = %d\n", i, f[i]);
+    }
+    return 0;
+}

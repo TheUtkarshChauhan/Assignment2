@@ -1,0 +1,16 @@
+/* A C program to find sum of all odd numbers between 1 to n.
+Author : Utkarsh Chuahan */
+#include <stdio.h>
+ 
+int main()
+{
+    int n,i,sum=0;
+    printf("enter the term up to which you want to find sum:\n");
+    scanf("%d",&n);
+    for(i=1;i<=n;i+=2)
+    {
+        sum+=i;
+    }
+    printf("Sum of odd numbers =%d",sum);
+    return 0;
+}
